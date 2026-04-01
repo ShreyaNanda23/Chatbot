@@ -34,5 +34,6 @@ from waitress import serve
 import os
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 10000))
+    port = int(os.environ.get("PORT", 10000))  # Render needs this
+    print(f"🚀 Starting server on port {port}...")
     serve(app, host="0.0.0.0", port=port)

@@ -8,10 +8,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from difflib import get_close_matches
 
-nltk.download('punkt')
-nltk.download('stopwords')
-nltk.download('wordnet')
-
 lemmatizer = WordNetLemmatizer()
 stop_words = set(stopwords.words('english'))
 
